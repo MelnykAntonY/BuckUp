@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql:parking/</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">test</property>
+        
+        <property name="connection.pool_size">1</property>
+
+        <property name="org.hibernate.dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>
+        
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+        
+        <property name="show_sql">true</property>
+        
+        <property name="hbm2dll.auto">update</property>
+
+        <mapping class="com.globallogic.melnykanton.parking.entities.Spot"/>
+        <mapping class="com.globallogic.melnykanton.parking.entities.Vehicle"/>
+
+    </session-factory>
+</hibernate-configuration>

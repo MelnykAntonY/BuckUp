@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+    <root level="info">
+    </root>
+    <logger name="com.globallogic.melnykanton.parking" level="debug"/>
+</configuration>
